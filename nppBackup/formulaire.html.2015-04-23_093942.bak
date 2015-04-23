@@ -5,7 +5,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<title>Formulaire de réservation de salles - M2L</title>
+<title>Formulaire de réservation</title>
 <script type="text/javascript">
 function switchInfoPerso1()
 {
@@ -68,6 +68,146 @@ function afficher(etat)
 
 
 </script>
+
+<style>
+body {
+	text-align: center;
+	background-color: white;
+}
+
+.titre {
+	width: 100%;
+	padding: 0.5%;
+}
+
+.titre2 {
+	color: black;
+	font-style: tahoma;
+	font-size: 2em;
+	font-style: bold;
+}
+
+.fond {
+	background-image: url("../images/fond.png");
+	margin: auto;
+}
+
+.bouton a {
+display:block;
+width:150px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background:url(images/bouton-noir.png) no-repeat;
+color:black;
+text-decoration:none;
+}
+
+.bouton a:hover {
+background:url(images/bouton-noir-2.png) no-repeat;
+}
+
+.formulaire {
+	background-color: #f4f6e9;
+	width: 70%;
+	height: 50%;
+	margin: auto;
+	padding: 1%;
+	border: 10px solid white;
+}
+
+.boxes {
+	
+	width: 30%;
+	height: 50%;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 2%;
+	margin: auto;
+	text-align : center;
+}
+
+.boxes1 {
+	background-color: #31338d;
+	width: 30%;
+	height: 50%;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 2%;
+	margin: auto;
+	font-family: Arial;
+	color: white;
+	font-style: bold;
+	font-size: 2em;
+	text-align: center;
+}
+
+.boxes2 {
+	background-color: #5163ab;
+	width: 30%;
+	height: 30%;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 2%;
+	margin: auto;
+	font-family: Arial;
+	color: black;
+	font-style: bold;
+	font-size: 2em;
+	text-align: center;
+}
+
+.boxes3 {
+	background-color: #7296c9;
+	width: 30%;
+	height: 30%;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 2%;
+	margin: auto;
+	font-family: Arial;
+	color: black;
+	font-style: bold;
+	font-size: 2em;
+	text-align: center;
+}
+
+h1 {
+	color: #1a355a;
+	text-align: center; 
+	font-size: 2.2em; 
+	font-family: Arial, 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
+	font-style: bold;
+}
+h2 {
+	color: black;
+	font-style: bold;
+	font size: 2.2em;	
+	font-style : Arial black;
+}
+h3 {
+	color : black;
+	font-style: bold;
+	font-size : 2em;
+	font-style : Tahoma;
+}
+ul {
+	list-style-type: none;	
+}
+li {
+	text-align: center;
+	padding: 2%;
+}
+
+li a {
+	color: white;
+	list-style-type: none;
+	align: center;
+}
+span {
+	text-align: center;	
+}
+</style>
 
 </head>
 <header>
