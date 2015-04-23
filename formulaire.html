@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Formulaire de réservation</title>
+<script type="text/javascript">
+function switchInfoPerso1()
+{
+divInfo = document.getElementById('divacacher1');
+if (divInfo.style.display == 'none')
+divInfo.style.display = 'block';
+else
+divInfo.style.display = 'none';
+}
+</script>
+<script type="text/javascript">
+function switchInfoPerso2()
+{
+divInfo = document.getElementById('divacacher2');
+if (divInfo.style.display == 'none')
+divInfo.style.display = 'block';
+else
+divInfo.style.display = 'none';
+}
+</script>
+<script type="text/javascript">
+function switchInfoPerso3()
+{
+divInfo = document.getElementById('divacacher3');
+if (divInfo.style.display == 'none')
+divInfo.style.display = 'block';
+else
+divInfo.style.display = 'none';
+}
+</script>
+
+<script type="text/javascript">
+function switchDiv(n) {
+   var id;
+   var hide = 0;
+   switch(n) {
+      case 1 : id = "signature"; break;
+      case 2 : id = "envoiMP"; break;
+      case 3 : id = "voirMP"; break;
+      }
+   if ( document.getElementById(id).style.display == "block" ) hide = 1;
+   document.getElementById('signature').style.display = "none";
+   document.getElementById('envoiMP').style.display = "none";
+   document.getElementById('voirMP').style.display = "none";
+   if ( hide != 1 ) document.getElementById(id).style.display = "block";
+   }
+</script>
+
+<script type="text/javascript">
+
+
+
+function afficher(etat)
+
+{   
+
+    document.getElementById("champ").style.visibility=etat;   
+
+}
+
+
+</script>
+
+<style>
+body {
+	text-align: center;
+	background-color: white;
+}
+
+.titre {
+	width: 100%;
+	padding: 0.5%;
+}
+
+.titre2 {
+	color: black;
+	font-style: tahoma;
+	font-size: 2em;
+	font-style: bold;
+}
+
+.fond {
+	background-image: url("../images/fond.png");
+	margin: auto;
+}
+
+.bouton a {
+display:block;
+width:150px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background:url(images/bouton-noir.png) no-repeat;
+color:black;
+text-decoration:none;
+}
+
+.bouton a:hover {
+background:url(images/bouton-noir-2.png) no-repeat;
+}
+
+.formulaire {
+	background-color: #f4f6e9;
+	width: 70%;
+	height: 50%;
+	margin: auto;
+	padding: 1%;
+	border: 10px solid white;
+}
+
+.boxes {
+	
+	width: 30%;
+	height: 50%;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 2%;
+	margin: auto;
+	text-align : center;
+}
+
+.boxes1 {
+	background-color: #31338d;
+	width: 30%;
+	height: 50%;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 2%;
+	margin: auto;
+	font-family: Arial;
+	color: white;
+	font-style: bold;
+	font-size: 2em;
+	text-align: center;
+}
+
+.boxes2 {
+	background-color: #5163ab;
+	width: 30%;
+	height: 30%;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 2%;
+	margin: auto;
+	font-family: Arial;
+	color: black;
+	font-style: bold;
+	font-size: 2em;
+	text-align: center;
+}
+
+.boxes3 {
+	background-color: #7296c9;
+	width: 30%;
+	height: 30%;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 2%;
+	margin: auto;
+	font-family: Arial;
+	color: black;
+	font-style: bold;
+	font-size: 2em;
+	text-align: center;
+}
+
+h1 {
+	color: #1a355a;
+	text-align: center; 
+	font-size: 2.2em; 
+	font-family: Arial, 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
+	font-style: bold;
+}
+h2 {
+	color: black;
+	font-style: bold;
+	font size: 2.2em;	
+	font-style : Arial black;
+}
+h3 {
+	color : black;
+	font-style: bold;
+	font-size : 2em;
+	font-style : Tahoma;
+}
+ul {
+	list-style-type: none;	
+}
+li {
+	text-align: center;
+	padding: 2%;
+}
+
+li a {
+	color: white;
+	list-style-type: none;
+	align: center;
+}
+span {
+	text-align: center;	
+}
+</style>
+
+</head>
+<header>
+
+</header>
+<body>
+
+<div class="titre">
+
+<h1>RESERVATION 2014</h1>
+
+</div>
+<div class="fond">
+</br>
+<div class="formulaire">
+<?php
+include("formulaire.php"); // Appel du fichier
+?>
+<p class="titre2">Choisissez votre salle</p>
+
+<form action="/resaok.html" method="post">
+
+<ul> 
+
+<div class="boxes">
+<!--NOM-->
+<li>Nom : <span><input type="nom" name="nom" id="nom" value="" class="form-control" style="width:40%;" <input type="text" name="Nom" id="Nom" size="30" required /></span></li>
+<!--MAIL-->
+<li>Mail : <span><input type="mail" name="mail" id="mail" value="" class="form-control" style="width:40%;"></span></li>
+</div>
+<br>
+<div class="boxes1">
+<!--SALLES-->                       
+
+        <li><a href="javascript: switchInfoPerso1();">GUADELOUPE</a></li>
+
+</div>
+
+<!--CHOIX GUADELOUPE-->
+<div id="divacacher1" style="display: none;" name="choix[1]">
+<div class="boxes">
+<img src="../images/salleguadeloupe.jpg" />
+<p>Salle Guadeloupe</p>
+<!--DATE-->
+<li>Date : <span><input type="date" name="datedebut" id="datedebut" value="<?php echo $datedebut; ?>" class="form-control" style="width:40%;"></span></li>
+<!--HEURE-->
+<li>Heure : <span><input type="number" step="1" value="0" min="7" max="20"></span></li>
+<!--DUREE-->
+<li>Durée : <span><input type="number" step="1" value="0" min="1" max="5"></span></li>
+<!--CAPACITE-->
+<li>Participants : <input type="number" step="1" value="0" min="1" max="10"></span></li>
+<!--MATERIEL-->
+<li>Matériel : <span><SELECT name="materiel" id="materiel" value="" style="width:40%;">
+						<OPTION VALUE="retro">Rétroprojecteur</OPTION>
+						</SELECT></span> </li>
+</div>
+</div>
+
+<div class="boxes2">
+<!--SALLES-->                       
+
+	<li><a href="javascript: switchInfoPerso2();">MARTINIQUE</a></li>
+
+</div>
+
+
+<!--CHOIX MARTINIQUE-->
+<div id="divacacher2" style="display: none;" name="choix[2]">
+<div class="boxes">
+<img src="../images/sallemartinique.jpg" />
+<p>Salle Martinique</p>
+<!--DATE-->
+<li>Date : <span><input type="date" name="datedebut" id="datedebut" value="<?php echo $datedebut; ?>" class="form-control" style="width:40%;"></span></li>
+<!--HEURE-->
+<li>Heure : <span><input type="number" step="1" value="0" min="7" max="20"></span></li>
+<!--DUREE-->
+<li>Durée : <span><input type="number" step="1" value="0" min="1" max="5"></span></li>
+<!--CAPACITE-->
+<li>Participants : <input type="number" step="1" value="0" min="1" max="15"></span></li>
+<!--MATERIEL-->
+<li>Matériel : <span><SELECT name="materiel" id="materiel" value="" style="width:40%;">
+						<OPTION VALUE="retro">Rétroprojecteur</OPTION>
+						<OPTION VALUE="mayotte">Sonorisation</OPTION>
+						</SELECT></span> </li>
+</div>
+</div>
+<div class="boxes3">
+<!--SALLES-->                       
+
+	<li><a href="javascript: switchInfoPerso3();">BAHAMAS</a></li>
+
+</div>
+
+
+<!--CHOIX BAHAMAS-->
+<div id="divacacher3" style="display: none;" name="choix[3]">
+<div class="boxes">
+<img src="../images/sallebahamas.jpg" />
+<p>Salle Bahamas</p>
+<!--DATE-->
+<li>Date : <span><input type="date" name="datedebut" id="datedebut" value="<?php echo $datedebut; ?>" class="form-control" style="width:40%;"></span></li>
+<!--HEURE-->
+<li>Heure : <span><input type="number" step="1" value="0" min="7" max="20"></span></li>
+<!--DUREE-->
+<li>Durée : <span><input type="number" step="1" value="0" min="1" max="5"></span></li>
+<!--CAPACITE-->
+<li>Participants : <input type="number" step="1" value="0" min="1" max="20"></span></li>
+<!--MATERIEL-->
+<li>Matériel : <span><SELECT name="materiel" id="materiel" value="" style="width:40%;">
+						<OPTION VALUE="retro">Rétroprojecteur</OPTION>
+						<OPTION VALUE="martinique">Vidéo-conférence</OPTION>
+						<OPTION VALUE="mayotte">Sonorisation</OPTION>
+						</SELECT></span></li>
+</div>
+</div>
+
+
+<!--VALIDER-->
+</ul>
+<button type="submit" value="Envoyer" class="bouton"><a href="resaok.html">Réservez</a></button>
+  
+                    
+</form>
+</div>
+</div>
+
+</body>
+
+</html>
