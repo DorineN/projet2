@@ -6,9 +6,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <title>Formulaire de réservation de salles - M2L</title>
-
-<link rel="stylesheet" href="css/style.css">
-
 <script type="text/javascript">
 function switchInfoPerso1()
 {
